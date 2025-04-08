@@ -1,0 +1,26 @@
+# 核心依赖
+langchain-community==0.0.34  # 文档加载器、向量库等组件
+langchain-core==0.2.1        # LangChain核心功能
+ollama==1.5.0                # Deepseek模型接口
+flask==3.0.3                 # Web框架
+flask-cors==4.0.0            # 跨域支持
+
+# 文档处理
+unstructured[local-inference,pdf,docx,xlsx]==0.13.4  # 多格式文档解析
+python-docx==1.1.0           # DOCX处理
+pdfminer.six==20231228       # PDF解析
+python-magic-bin==0.4.14     # 文件类型检测（Windows需要）
+
+# 向量数据库
+chromadb==0.5.0              # 向量存储引擎
+sentence-transformers==2.7.0 # 嵌入模型支持
+
+# 其他工具
+tqdm==4.66.2                 # 进度条显示
+python-dotenv==1.0.1         # 环境变量管理
+argparse==1.4.0              # 命令行参数解析
+loguru==0.7.2                # 增强日志功能
+
+# 系统级依赖（需要单独安装）
+# libreoffice (文档格式转换)
+# poppler-utils (PDF处理工具)
